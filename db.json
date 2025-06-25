@@ -1,13 +1,13 @@
 {
   "posts": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Welcome to My Blog",
       "content": "This is the first post.",
       "author": "Martin"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "second Post",
       "content": "Here's some more content.",
       "author": "Martin"

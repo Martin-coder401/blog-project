@@ -4,40 +4,59 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blog Post Manager</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <aside id="post-list" class="sidebar"></aside>
+    
+    <!-- Sidebar: List of Post Titles -->
+    <aside id="post-list" class="sidebar">
+      <!-- Titles will be injected here -->
+    </aside>
 
+    <!-- Main Content Area -->
     <main id="post-detail" class="content">
+      
+      <!-- Default Message -->
       <p>Select a post to view details.</p>
+      
+      <!-- Add New Post Form -->
+      <section class="new-post-section">
+        <h3>Add New Post</h3>
+        <form id="new-post-form">
+          <label for="new-title">Title</label>
+          <input type="text" id="new-title" name="title" placeholder="Title" required />
+
+          <label for="new-content">Content</label>
+          <textarea id="new-content" name="content" placeholder="Content" required></textarea>
+
+          <label for="new-author">Author</label>
+          <input type="text" id="new-author" name="author" placeholder="Author" required />
+
+          <button type="submit">Add Post</button>
+        </form>
+      </section>
+
+      <!-- Edit Post Form (hidden until “Edit” is clicked) -->
+      <section class="post-actions">
+        <form id="edit-post-form" class="hidden">
+          <h4>Update Post Details</h4>
+
+          <label for="edit-title">Title</label>
+          <input type="text" id="edit-title" name="title" required />
+
+          <label for="edit-content">Content</label>
+          <textarea id="edit-content" name="content" rows="5" required></textarea>
+
+          <button type="submit">Update Post</button>
+          <button type="button" id="cancel-edit">Cancel</button>
+        </form>
+      </section>
+
     </main>
   </div>
 
-  <section class="new-post-section">
-    <h3>Add New Post</h3>
-    <form id="new-post-form">
-      <input type="text" name="title" placeholder="Title" required />
-      <textarea name="content" placeholder="Content" required></textarea>
-      <input type="text" name="author" placeholder="Author" required />
-      <button type="submit">Add Post</button>
-    </form>
-  </section>
-
-    <section class="post-actions">
-        <button id="edit-post" class="hidden">Edit Post</button>
-        <button id="delete-post" class="hidden">Delete Post</button>
-  <form id="edit-post-form" class="hidden">
-    <h4>Update Post Details</h4>
-    <label for="edit-title">Title:</label>
-    <input type="text" name="title" id="edit-title" required />
-    <label for="edit-content">Content:</label>
-    <textarea name="content" id="edit-content" rows="5" required></textarea>
-    <button type="submit">Update Post</button>
-    <button type="button" id="cancel-edit">Cancel</button>
-  </form>
-
-  <script src="src/index.js"></script>
+  <!-- Your script (flat file) -->
+  <script src="index.js"></script>
 </body>
 </html>
