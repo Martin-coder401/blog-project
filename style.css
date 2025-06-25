@@ -1,4 +1,4 @@
-/* ===== Base Typography & Full-Viewport Centering ===== */
+
 body {
   font-family: "Times New Roman", Georgia, serif;
   display: flex;
@@ -10,7 +10,6 @@ body {
   color: #333333;
 }
 
-/* ===== Centralized Wrapper ===== */
 .container {
   display: flex;
   width: 90%;
@@ -21,7 +20,6 @@ body {
   overflow: hidden;
 }
 
-/* ===== Sidebar (Posts List) ===== */
 .sidebar {
   width: 35%;
   border-right: 1px solid #dddddd;
@@ -30,25 +28,21 @@ body {
   background-color: #f8f8f8;
 }
 
-/* ===== Main Content Area ===== */
 .content {
   width: 65%;
   padding: 2rem;
   text-align: center;
 }
 
-/* ===== Section Titles ===== */
 h2, h3, h4 {
   margin-bottom: 1rem;
   font-weight: normal;
 }
 
-/* ===== Hide Utility ===== */
 .hidden {
   display: none !important;
 }
 
-/* ===== Post-Item Styling ===== */
 .post-item {
   margin: 0.5rem 0;
   padding: 0.5rem;
@@ -61,21 +55,19 @@ h2, h3, h4 {
   background-color: #eaeaea;
 }
 
-/* ===== Form Sections & Centering ===== */
 .new-post-section,
 .post-actions {
   margin: 1.5rem auto;
   width: 80%;
 }
 
-/* ===== Default Form Layout (flex) ===== */
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* ===== Input & Textarea Styling ===== */
+
 form input,
 form textarea {
   width: 100%;
@@ -90,7 +82,7 @@ form textarea {
   box-sizing: border-box;
 }
 
-/* ===== Button Styling ===== */
+
 form button {
   width: auto;
   padding: 0.75rem 2rem;
@@ -109,10 +101,9 @@ form button:hover {
   background-color: #e0e0e0;
 }
 
-/* ===== OVERRIDES: Force Vertical Stacking of Form Fields ===== */
 #new-post-form,
 #edit-post-form {
-  /* switch back to block layout so children naturally stack */
+
   display: block !important;
   width: 100% !important;
   max-width: 400px;
@@ -121,7 +112,7 @@ form button:hover {
 
 #new-post-form > *,
 #edit-post-form > * {
-  /* make each direct child block-level and full-width */
+  
   display: block !important;
   width: 100% !important;
   margin-bottom: 1rem;
